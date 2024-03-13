@@ -67,7 +67,7 @@ ynh_script_progression --message="Installing Composer..." --weight=3
 mkdir -p "$install_dir/.composer"
 ynh_add_config --template="composer.json" --destination="$install_dir/composer.json"
 
-ynh_install_composer --composerversion="2.2.0" --phpversion="$phpversion" --workdir="$install_dir"
+ynh_install_composer --composerversion="2.2.0" --phpversion="8.2" --workdir="$install_dir"
 
 export PATH="$install_dir/vendor/bin:$PATH"
 
