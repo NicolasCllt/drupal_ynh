@@ -52,6 +52,10 @@ if [ "${PACKAGE_CHECK_EXEC:-0}" -eq 0 ]; then
 fi
 
 #=================================================
+# SET PHP
+#=================================================
+update-alternatives --set php /usr/bin/php8.2
+#=================================================
 # CREATE DRUSH ALIAS
 #=================================================
 ynh_script_progression --message="Creating Drush alias..." --weight=1
